@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="frost">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>真光岛 OS · 宁羽的手机</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="phone">
+    <div class="screen">
+      <!-- 状态栏：信号极弱 · 电量极低 -->
+      <div class="statusbar">
+        <div class="left" id="sbTime">--:--</div>
+        <div class="right">
+          <span class="weak">信号·极弱</span>
+          <div class="sig"><i></i><i></i><i></i><i></i></div>
+          <div class="bat"></div>
+        </div>
+      </div>
+
+      <!-- 桌面主区（由 JS 渲染） -->
+      <div class="scroll"><div id="home"></div></div>
+
+      <!-- 底部 Dock -->
+      <div class="dock" id="dock"></div>
+
+      <!-- 上滑面板 -->
+      <div class="backdrop" id="backdrop"></div>
+      <div class="sheet" id="sheet">
+        <div class="sheet-head">
+          <div class="grab"></div>
+          <div class="ico" id="sheetIco"></div>
+          <div class="tt" id="sheetTitle"></div>
+          <button class="close" id="sheetClose">✕</button>
+        </div>
+        <div class="sheet-body" id="sheetBody"></div>
+      </div>
+
+      <!-- 角色扮演全屏层 -->
+      <div class="roleplay" id="roleplay"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
